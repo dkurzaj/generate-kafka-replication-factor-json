@@ -11,7 +11,7 @@ echo '  "partitions":[' >> $output_file
 
 current_broker_id_index=0
 
-# Responsible for the circular aray of the partition IDs
+# Responsible for the circular array over the brokers IDs
 set_next_broker(){
     current_broker_id_index=$1
     current_broker_id_index=$(($current_broker_id_index + 1))
